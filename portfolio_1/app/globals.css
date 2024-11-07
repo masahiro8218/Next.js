@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  background-image: url('/bgimageglobalscss.png');
+  background-color: #483d8b;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  transform: translate3d(0, 0, 0);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.stroke-text {
+  color: transparent;
+  font-family: M_PLUS_2, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.normal-cace {
+  text-transform: none;
+}
+
+.blur {
+  background: #ff8c00;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -20;
+}
